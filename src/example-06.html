@@ -9,44 +9,59 @@
     <link rel="stylesheet" href="/styles/output.css" />
   </head>
   <body>
-    <div class="border border-black bg-gradient-to-r from-[#263D83] to-[#102457] text-white h-[150px]">
-      <div class="m-4 relative space-y-6">
-        <h2 class="font-bold text-2xl">NEWS</h2>
-        <svg class="absolute top-1 right-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5"/>
-          <path d="M5 8.02114H11M8.05331 5L8.05331 11" stroke="#F5F5F5"/>
-        </svg>
+    <!-- grid를 활용해서 만들어보기 -->
+     <div class="text-white bg-gradient-to-r from-[#263D83] to-[#102457] grid grid-cols-[1fr_100px] grid-rows-3 p-4 space-y-2">
+      <h2 class="font-bold text-xl">NEWS</h2>
+      <svg class="ml-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5"/>
+        <path d="M5 8.02114H11M8.05331 5L8.05331 11" stroke="#F5F5F5"/>
+      </svg>
+      <div class="contents min-w-0">
+        <a class="truncate mt-2" href="/">[MTN] 이디야커피, 조각케이크 2종 출시... [MTN]이디야커피, 조각케이크 2종 출시...</a>
+        <time class="col-start-2 row-start-2 pl-3 mt-2" datetime="2020-09-08T15:08:38">2020.09.08</time>
+        <a class="truncate col-start-1 row-start-3" href="/">[아시아경제] 이디야커피, '비니스트 커피믹스 출시'[아시아경제] 이디야커피, '비니스트 커피믹스 ...</a>
+        <time class="pl-3" datetime="2020-08-27T15:08:38">2020.08.27</time>
       </div>
-      <div class="flex justify-between items-center mt-2 ml-4">
-        <a class="truncate" href="/">[MTN] 이디야커피, 조각케이크 2종 출시... [MTN] 이디야커피, 조각케이크 2종 출시...</a>
-        <time class="pl-10 pr-2" datetime="2020-09-08T15:08:38">2020.09.08</time>
-      </div>
-      <div class="flex justify-between items-center mt-2 ml-4">
-        <a class="truncate" href="/">[아시아경제] 이디야커피, '비니스트 커피믹스 출시'[아시아경제] 이디야커피, '비니스트 커피믹스 ...</a>
-        <time class="pl-10 pr-2" datetime="2020-08-27T15:08:38">2020.08.27</time>
-      </div>
-    </div>
-
-    <!-- 강사님 코드 -->
-    <!-- <section class="bg-(image:--ediya-blue) text-white grid grid-cols-[1fr_100px] p-4 gap-2">
-      <h2 class="font-bold text-xl h-10">NEWS</h2>
-      <ul class="contents min-w-0">
-        <li class="grid grid-cols-subgrid grid-rows-subgrid col-span-2">
-          <a class="truncate" href="/">[MTN] 이디야커피, 조각 케이크 2종 출시 디저트 강화 이디야커피, 조각 케이크 2종 출시 디저트 강화</a>
-          <time class="text-right" datetime="2025-03-14T11:54:25">2025.03.14</time>
-        </li>
-        <li class="grid grid-cols-subgrid grid-rows-subgrid col-span-2">
-          <a class="truncate" href="#">[아시아경제] 이디야커피, '비니스트 커피믹스 출시' [아시아경제] 이디야커피, '비니스트 커피믹스 출시'</a>
-          <time class="text-right" datetime="2025-03-14T13:17:54">2025.03.14</time>
-        </li>
-      </ul>
-      <a href="/" class="col-start-2 row-start-1 justify-self-end">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <title>이디야 뉴스 더보기</title>
-          <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5" />
-          <path d="M5 8.02114H11M8.05331 5L8.05331 11" stroke="#F5F5F5" />
-        </svg>
-      </a>
-    </section> -->
+     </div>
   </body>
-</html>
+  </html>
+  
+  <!-- <div class="border border-black bg-gradient-to-r from-[#263D83] to-[#102457] text-white h-[150px]">
+    <div class="m-4 relative space-y-6">
+      <h2 class="font-bold text-2xl">NEWS</h2>
+      <svg class="absolute top-1 right-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5"/>
+        <path d="M5 8.02114H11M8.05331 5L8.05331 11" stroke="#F5F5F5"/>
+      </svg>
+    </div>
+    <div class="flex justify-between items-center mt-2 ml-4">
+      <a class="truncate" href="/">[MTN] 이디야커피, 조각케이크 2종 출시... [MTN] 이디야커피, 조각케이크 2종 출시...</a>
+      <time class="pl-10 pr-2" datetime="2020-09-08T15:08:38">2020.09.08</time>
+    </div>
+    <div class="flex justify-between items-center mt-2 ml-4">
+      <a class="truncate" href="/">[아시아경제] 이디야커피, '비니스트 커피믹스 출시'[아시아경제] 이디야커피, '비니스트 커피믹스 ...</a>
+      <time class="pl-10 pr-2" datetime="2020-08-27T15:08:38">2020.08.27</time>
+    </div>
+  </div> -->
+
+  <!-- 강사님 코드 -->
+  <!-- <section class="bg-(image:--ediya-blue) text-white grid grid-cols-[1fr_100px] p-4 gap-2">
+    <h2 class="font-bold text-xl h-10">NEWS</h2>
+    <ul class="contents min-w-0">
+      <li class="grid grid-cols-subgrid grid-rows-subgrid col-span-2">
+        <a class="truncate" href="/">[MTN] 이디야커피, 조각 케이크 2종 출시 디저트 강화 이디야커피, 조각 케이크 2종 출시 디저트 강화</a>
+        <time class="text-right" datetime="2025-03-14T11:54:25">2025.03.14</time>
+      </li>
+      <li class="grid grid-cols-subgrid grid-rows-subgrid col-span-2">
+        <a class="truncate" href="#">[아시아경제] 이디야커피, '비니스트 커피믹스 출시' [아시아경제] 이디야커피, '비니스트 커피믹스 출시'</a>
+        <time class="text-right" datetime="2025-03-14T13:17:54">2025.03.14</time>
+      </li>
+    </ul>
+    <a href="/" class="col-start-2 row-start-1 justify-self-end">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <title>이디야 뉴스 더보기</title>
+        <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5" />
+        <path d="M5 8.02114H11M8.05331 5L8.05331 11" stroke="#F5F5F5" />
+      </svg>
+    </a>
+  </section> -->
