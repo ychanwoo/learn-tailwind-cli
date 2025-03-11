@@ -3,59 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>유틸리티 퍼스트 — Tailwind CSS</title>
+    <title>Tailwind CSS</title>
     <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="preload" as="font" href="/assets/font/pretendard/woff2/PretendardVariable.woff2">
 		<link rel="stylesheet" href="./styles/output.css" />
   </head>
-  <!-- Grid 활용 -->
-  <body class="bg-sky-200 grid place-items-center min-h-screen">
-    <div class="bg-white w-1/2 min-w-2xs p-6 rounded-2xl shadow-2xl grid grid-cols-4">
-      <div class="col-start-1 col-end-2 row-start-1 row-end-2 grid place-items-center">
-        <img src="./assets/tailwind-logo.svg" alt="tailwindLogo" class="size-16 col-start-1 col-end-2 row-start-1 row-end-2"/>
-      </div>
-      <div class="space-y-3 col-start-2 col-end-5 row-start-1 row-end-2">
-        <p class="text-3xl font-bold text-sky-500">Tailwind CSS</p>
-        <p class="text-black">다양한 Tailwind CSS의 유틸리티 세트를 활용해 복잡한 컴포넌트를 구성할 수 잇습니다.</p>
-        <a class="text-sky-500">유틸리티 퍼스트 펀터멘탈</a>
-      </div>
-    </div>    
-  </body>  
-</html>
-
-  <!-- <body class="bg-blue-200 flex justify-center items-center min-h-screen">
-    <div class="bg-white w-1/2 min-w-2xs flex items-center gap-6 p-6 rounded-xl shadow-2xl text-sky-500">
-      <svg class="size-16 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
-        <g clip-path="url(#prefix__clip0)">
-          <path fill="currentColor" fill-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" clip-rule="evenodd"/>
-        </g>
-        <defs>
-          <clipPath id="prefix__clip0"><path fill="#fff" d="M0 0h54v32.4H0z"/></clipPath>
-        </defs>
-      </svg>
-      <div class="space-y-3">
-        <p class="text-3xl font-bold text-sky-500">Tailwind CSS</p>
-        <p class="text-black">다양한 Tailwind CSS의 유틸리티 세트를 활용해 복잡한 컴포넌트를 구성할 수 잇습니다.</p>
-        <a class="text-sky-500">유틸리티 퍼스트 펀터멘탈</a>
-      </div>
-    </div>
+  <body class="font-sans">
+    <h1 class="text-2xl font-bold text-center my-4 font-serif">Tailwind CSS</h1>
+    <ul class="grid grid-cols-(--lion) w-1/2 max-w-[800px] mx-auto">
+      <li class="bg-blue-700"><a class="block p-4 text-center" href="example-01.html">중앙배치</a></li>
+      <li class="bg-blue-600"><a class="block p-4 text-center" href="example-02.html">Example 02</a></li>
+      <li class="bg-blue-500"><a class="block p-4 text-center" href="example-03.html">Example 03</a></li>
+      <li class="bg-blue-400"><a class="block p-4 text-center" href="example-04.html">Example 04</a></li>
+      <li class="bg-blue-300"><a class="block p-4 text-center" href="example-05.html">Example 05</a></li>
+      <li class="bg-blue-200"><a class="block p-4 text-center" href="example-06.html">Example 06</a></li>
+      <li class="bg-blue-100"><a class="block p-4 text-center" href="example-07.html">Example 07</a></li>
+      <li class="bg-blue-50 "><a class="block p-4 text-center" href="example-08.html">Example 08</a></li>
+      <li class="bg-teal-100"><a class="block p-4 text-center" href="example-09.html">Example 09</a></li>
+      <li class="bg-teal-200"><a class="block p-4 text-center" href="example-10.html">Example 10</a></li>
+      <li class="bg-teal-300"><a class="block p-4 text-center" href="example-11.html">Example 11</a></li>
+      <li class="bg-teal-400"><a class="block p-4 text-center" href="example-12.html">Example 12</a></li>
+    </ul>
   </body>
-
-
-  <!-- 강사님 코드 
-    <body class="bg-yellow-200 min-h-screen flex justify-center items-center">
-    <div class="bg-white w-1/2 min-w-3xs flex items-center gap-6 p-6 rounded-xl shadow-2xl text-sky-500 hover:text-green-500 focus:text-green-500 focus:outline-2 focus:outline-offset-2 focus:outline-green-500" tabindex="0">
-      <svg class="size-16 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
-      <g clip-path="url(#prefix__clip0)">
-        <path fill="currentColor" fill-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" clip-rule="evenodd"/>
-      </g>
-      <defs>
-        <clipPath id="prefix__clip0"><path fill="#fff" d="M0 0h54v32.4H0z"/></clipPath>
-      </defs>
-    </svg>
-    <div class="space-y-3">
-      <h1 class="text-3xl font-bold">Tailwind CSS</h1>
-      <p class="text-black">다양한 Tailwind CSS의 유틸리티 세트를 활용해 복잡한 컴포넌트를 구성할 수 잇습니다.</p>
-      <a href="/" class="underline">유틸리티 퍼스트 펀터멘탈</a>
-    </div>
-  </div>
-</body> -->
+</html>

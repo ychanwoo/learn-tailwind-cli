@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind CSS</title>
+    <link rel="icon" href="/assets/favicon.svg" />
+    <link rel="preload" as="font" href="/assets/font/pretendard/woff2/PretendardVariable.woff2">
+    <link rel="stylesheet" href="/styles/output.css" />
+  </head>
+  <body>
+    <!-- <div class="flex border border-gray-500 min-w-96 h-[125px]">
+      <span class="font-bold text-xl absolute top-2 left-2 text-white">NOTICE</span>
+      <div class="bg-gradient-to-r from-[#263D83] to-[#102457] p-10 w-[180px] h-[125px]">
+        <button class="absolute top-[100px] left-[80px]">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5"/>
+          <path d="M9.25 10.5L6.75 8L9.25 5.5" stroke="#F5F5F5"/>
+          </svg>
+        </button>
+        <button class="absolute top-[100px] left-[95px]">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="-0.5" y="0.5" width="15" height="15" transform="matrix(-1 0 0 1 15 0)" stroke="#F5F5F5"/>
+          <path d="M6.75 10.5L9.25 8L6.75 5.5" stroke="#F5F5F5"/>
+          </svg>
+        </button>
+      </div>
+      <div class="bg-white p-6 min-w-0">
+        <p class="text-[#24388D] font-bold text">이디야멤버스가 새로워집니다.</p>
+        <p class="text-[#787878] text-[12px]">2020.04.25</p>
+        <p class="mt-3 truncate">이디야멤버스에 새로운 기능이 추가됩니다. 추가되는 고객등급제, 이디야카드, 스마트 ...</p>
+      </div>
+    </div> -->
+
+    <section class="flex border border-gray-500 bg-blue-950">
+      <div class="p-4 text-white w-[200px] relative">
+        <h2 class="text-xl font-bold">NOTICE</h2>
+        <div class="absolute right-1 bottom-0">
+          <button>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5"/>
+            <path d="M9.25 10.5L6.75 8L9.25 5.5" stroke="#F5F5F5"/>
+            </svg>
+          </button>
+          <button class="relative right-1">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="-0.5" y="0.5" width="15" height="15" transform="matrix(-1 0 0 1 15 0)" stroke="#F5F5F5"/>
+            <path d="M6.75 10.5L9.25 8L6.75 5.5" stroke="#F5F5F5"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <article class="p-4 bg-white grow space-y-2 min-w-0">
+        <p class="text-lg text-[#24388D] font-bold">이디야멤버스가 새로워집니다.</p>
+        <time class="block text-[#787878] text-xs">2020.04.25</time>
+        <p class="mt-4 truncate">이디야멤버스에 새로운 기능이 추가됩니다. 추가되는 고객등급제, 이디야카드, 스마트 ...</p>
+      </article>
+    </section>
+  </body>
+</html>
