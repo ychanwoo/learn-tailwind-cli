@@ -15,3 +15,11 @@
   --lion: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+@layer components{
+  .notice{
+    @apply flex border border-green-700 bg-blue-950;
+    >div{
+      @apply p-4 text-white w-[200px] relative;
+    }
+  }
+}
